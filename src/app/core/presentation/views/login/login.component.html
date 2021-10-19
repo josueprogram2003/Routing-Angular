@@ -1,0 +1,30 @@
+<div class="encabezado">
+  <form class="w-25 container form__container rounded-3">
+    <h1 class="title">Iniciar Sesion</h1>
+    <div class="row col-sm-10 w-75">
+      <div class="mb-4">
+        <input
+          name="user"
+          type="text"
+          class="form-control"
+          placeholder=" User"
+          [(ngModel)]="user"
+        />
+      </div>
+      <div class="mb-4">
+        <input
+          name="pass"
+          type="password"
+          class="form-control"
+          placeholder=" Password"
+          [(ngModel)]="pass"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row w-50">
+      <button class="btn btn-success" (click)="iniciarSesionAdra()">
+        Ingresar
+      </button>
+    </div>
+  </form>
+</div>
